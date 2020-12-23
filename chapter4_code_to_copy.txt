@@ -1,0 +1,227 @@
+P26
+
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(8) {
+        Array<Int>(8) { 0 }
+    }
+    for (row in 0..7) {
+        for (column in 0..7) {
+            if (row > column) {
+                shades[row][column] = 255
+            } else {
+                shades[row][column] = 0
+            }
+        }
+    }
+    return shades
+}
+
+P27
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(8) {
+        Array<Int>(8) { 0 }
+    }
+    for (row in 0..7) {
+        for (column in 0..7) {
+            if (column == 0 || column == 2) {
+                shades[row][column] = 0
+            } else {
+                shades[row][column] = 255
+            }
+        }
+    }
+    return shades
+}
+
+P28
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(8) {
+        Array<Int>(8) { 0 }
+    }
+    for (row in 0..7) {
+        for (column in 0..7) {
+            if (row == 1 && column == 1) {
+                shades[row][column] = 0
+            } else {
+                shades[row][column] = 255
+            }
+        }
+    }
+    return shades
+}
+
+P29
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(8) {
+        Array<Int>(8) { 0 }
+    }
+    for (row in 0..7) {
+        for (column in 0..7) {
+            if (row == 1 && column == 1) {
+                shades[row][column] = 0
+            } else if (row == 1 && column == 6) {
+                shades[row][column] = 0
+            } else {
+                shades[row][column] = 255
+            }
+        }
+    }
+    return shades
+}
+
+-------------------------------------------
+P30
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(8) {
+        Array<Int>(8) { 0 }
+    }
+    for (row in 0..7) {
+        for (column in 0..7) {
+            if (row > column) {
+                shades[row][column] = 0
+            } else {
+                shades[row][column] = 255
+            }
+        }
+    }
+    return shades
+}
+
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(8) {
+        Array<Int>(8) { 0 }
+    }
+    for (row in 0..7) {
+        for (column in 0..7) {
+            if (row == column) {
+                shades[row][column] = 0
+            } else {
+                shades[row][column] = 255
+            }
+        }
+    }
+    return shades
+}
+
+P31
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(8) {
+        Array<Int>(8) { 0 }
+    }
+    for (row in 0..7) {
+        for (column in 0..7) {
+            if (column == 0) {
+                shades[row][column] = 0
+            } else {
+                shades[row][column] = 255
+            }
+        }
+    }
+    return shades
+}
+
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(8) {
+        Array<Int>(8) { 0 }
+    }
+    for (row in 0..7) {
+        for (column in 0..7) {
+            if (column == 0 || column == 2 || column == 4 || column == 6) {
+                shades[row][column] = 0
+            } else {
+                shades[row][column] = 255
+            }
+        }
+    }
+    return shades
+}
+
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(8) {
+        Array<Int>(8) { 0 }
+    }
+    for (row in 0..7) {
+        for (column in 0..7) {
+            if (column == 0 || column == 2 || row == 0 || row == 2) {
+                shades[row][column] = 0
+            } else {
+                shades[row][column] = 255
+            }
+        }
+    }
+    return shades
+}
+
+P32
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(8) {
+        Array<Int>(8) { 0 }
+    }
+    for (row in 0..7) {
+        for (column in 0..7) {
+            if (row > 2 && column > 2) {
+                shades[row][column] = 0
+            } else {
+                shades[row][column] = 255
+            }
+        }
+    }
+    return shades
+}
+
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(8) {
+        Array<Int>(8) { 0 }
+    }
+    for (row in 0..7) {
+        for (column in 0..7) {
+            if (row < 3 || column < 3) {
+                shades[row][column] = 255
+            } else {
+                shades[row][column] = 0
+            }
+        }
+    }
+    return shades
+}
+
+P33
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(8) {
+        Array<Int>(8) { 0 }
+    }
+    for (row in 0..7) {
+        for (column in 0..7) {
+            if (row == 1 && column == 1) {
+                shades[row][column] = 0
+            } else if (row == 6 && column == 6) {
+                shades[row][column] = 0
+            } else {
+                shades[row][column] = 255
+            }
+        }
+    }
+    return shades
+}
+
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(8) {
+        Array<Int>(8) { 0 }
+    }
+    for (row in 0..7) {
+        for (column in 0..7) {
+            if (row == 1 && column == 1) {
+                shades[row][column] = 0
+            } else if (row == 6 && column == 1) {
+                shades[row][column] = 0
+            } else if (row == 1 && column == 6) {
+                shades[row][column] = 0
+            } else if (row == 6 && column == 6) {
+                shades[row][column] = 0
+            } else {
+                shades[row][column] = 255
+            }
+        }
+    }
+    return shades
+}

@@ -1,0 +1,156 @@
+P66
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val sightings = mutableListOf<String>()
+    sightings.add("emu")
+    sightings.add("magpie")
+    sightings.add("galah")
+    sightings.add("emu")
+
+    println("Number of bird sightings: " + sightings.size)
+    if (sightings.contains("emu")) {
+        println("Saw an emu!")
+    }
+    if (sightings.contains("brolga")) {
+        println("Saw a brolga!")
+    }
+    println("Third sighting: " + sightings[2])
+}
+
+
+
+
+
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val birds = mutableSetOf<String>()
+    birds.add("emu")
+    birds.add("magpie")
+    birds.add("galah")
+    birds.add("emu")
+
+    println("Number of bird species: " + birds.size)
+    if (birds.contains("emu")) {
+        println("Saw an emu!")
+    }
+    if (birds.contains("brolga")) {
+        println("Saw a brolga!")
+    }
+}
+
+
+
+
+P67
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val nameToAge = mutableMapOf<String, Int>()
+    nameToAge.put("Harry", 15)
+    nameToAge.put("Luna", 16)
+    nameToAge.put("Snape", 36)
+
+    println("Harry's age: " + nameToAge["Harry"])
+    println("Luna's age: " + nameToAge["Luna"])
+    println("Snape's age: " + nameToAge["Snape"])
+}
+
+
+
+P68
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val nameToAge = mutableMapOf<String, Int>()
+    nameToAge.put("Harry", 15)
+    nameToAge.put("Luna", 16)
+    nameToAge.put("Snape", 36)
+
+    nameToAge.put("Luna", 17)//Happy birthday!
+
+    nameToAge.remove("Snape")//So long Snape!
+
+    for (name in nameToAge.keys) {
+        val age = nameToAge[name]
+        println("$name is $age years old")
+    }
+}
+
+
+
+
+package pfb.basics
+
+fun main(args: Array<String>) {
+    //Record the sightings.
+    val sightings = mutableListOf<String>()
+    sightings.add("emu")
+    sightings.add("magpie")
+    sightings.add("galah")
+    sightings.add("emu")
+
+    //Count the species.
+    val speciesToCount = mutableMapOf<String, Int>()
+    for (sighting in sightings) {
+        val countSoFar = speciesToCount[sighting]
+        val updatedCount = countSoFar + 1
+        speciesToCount.put(sighting, updatedCount)
+    }
+
+    //Print the species counts.
+    for (species in speciesToCount.keys) {
+        val count = speciesToCount[species]
+        println("Number of $species sightings: $count")
+    }
+}
+
+
+
+
+P70
+package pfb.basics
+
+fun main(args: Array<String>) {
+    //Record the sightings.
+    val sightings = mutableListOf<String>()
+    sightings.add("emu")
+    sightings.add("magpie")
+    sightings.add("galah")
+    sightings.add("emu")
+
+    //Count the species.
+    val speciesToCount = mutableMapOf<String, Int>()
+    for (sighting in sightings) {
+        val countSoFar = speciesToCount[sighting] ?: 0
+        val updatedCount = countSoFar + 1
+        speciesToCount.put(sighting, updatedCount)
+    }
+
+    //Print the species counts.
+    for (species in speciesToCount.keys) {
+        val count = speciesToCount[species]
+        println("Number of $species sightings: $count")
+    }
+}
+
+
+--------------------------------
+
+P71
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val sightings = mutableListOf<String>()
+    sightings.add("pee-wee")
+    sightings.add("cockatoo")
+    sightings.add("thick-knee")
+    sightings.add("brolga")
+
+    println("Number of bird sightings: " + sightings.size)
+    if (sightings.contains("brolga")) {
+        println("Saw a brolga!")
+    }
+    println("Third sighting: " + sightings[2])
+}

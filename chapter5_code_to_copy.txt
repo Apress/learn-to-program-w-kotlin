@@ -1,0 +1,215 @@
+P36
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val x = 7 + 5
+    println(x)
+}
+
+
+
+
+package pfb.basics
+
+fun main(args: Array<String>) {
+    for (i in 1..10) {
+        //Loop body goes here
+    }
+}
+
+P37
+package pfb.basics
+
+fun main(args: Array<String>) {
+    for (i in 1..10) {
+        val x = 7 * i
+        println("7 times $i is $x")
+    }
+}
+
+
+package pfb.basics
+
+fun main(args: Array<String>) {
+    for (s in 1..10) {
+        //Print out the s times table
+        println()
+    }
+}
+
+
+P38
+package pfb.basics
+
+fun main(args: Array<String>) {
+    for (s in 1..10) {
+        for (i in 1..10) {
+            //Define x to be s times i
+            //Print out s, i and the result
+        }
+        println()
+    }
+}
+
+
+package pfb.basics
+
+fun main(args: Array<String>) {
+    for (i in 1..20) {
+        val div = i / 5
+        val rem = i % 5
+        println("i: $i, div: $div, rem: $rem")
+    }
+}
+
+
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(16) {
+        Array<Int>(16) { 0 }
+    }
+    for (row in 0..15) {
+        for (col in 0..15) {
+            shades[row][col] = row * col
+        }
+    }
+    return shades
+}
+
+
+P40
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(16) {
+        Array<Int>(16) { 0 }
+    }
+    for (row in 0..15) {
+        for (col in 0..15) {
+            val remainder = row % 2
+            if (remainder == 0) {
+                shades[row][col] = 0
+            } else {
+                shades[row][col] = 255
+            }
+        }
+    }
+    return shades
+}
+
+P41
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(7) {
+        Array<Int>(7) { 0 }
+    }
+    for (row in 0..6) {
+        for (col in 0..6) {
+            val remainder = (row * col) % 2
+            if (remainder == 0) {
+                shades[row][col] = 255
+            } else {
+                shades[row][col] = 0
+            }
+        }
+    }
+    return shades
+}
+
+----------------------------------
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val x = 7 - 5
+    println(x)
+}
+
+
+
+
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val x = 7 * 5
+    println(x)
+}
+
+
+
+P42
+package pfb.basics
+
+fun main(args: Array<String>) {
+    for (i in 1..10) {
+        val x = 7 * i
+        println(x)
+    }
+}
+
+
+
+package pfb.basics
+
+fun main(args: Array<String>) {
+    for (s in 1..10) {
+        for (i in 1..10) {
+            val x = s * i
+            print("$s*$i=$x\t")
+        }
+        println()
+    }
+}
+
+
+
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(16) {
+        Array<Int>(16) { 0 }
+    }
+    for (row in 0..15) {
+        for (col in 0..15) {
+            val remainder = (row + col) % 2
+            if (remainder == 0) {
+                shades[row][col] = 0
+            } else {
+                shades[row][col] = 255
+            }
+        }
+    }
+    return shades
+}
+
+
+P43
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(16) {
+        Array<Int>(16) { 0 }
+    }
+    for (row in 0..15) {
+        for (col in 0..15) {
+            val remainder = (row + col) % 2
+            if (remainder == 0) {
+                shades[row][col] = 0
+            } else {
+                shades[row][col] = 255
+            }
+        }
+    }
+    return shades
+}
+
+
+
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(8) {
+        Array<Int>(8) { 0 }
+    }
+    for (row in 0..7) {
+        for (col in 0..7) {
+            val remainder = (row + col) % 2
+            if (remainder == 0) {
+                shades[row][col] = 255
+            } else {
+                shades[row][col] = 0
+            }
+        }
+    }
+    return shades
+}
+

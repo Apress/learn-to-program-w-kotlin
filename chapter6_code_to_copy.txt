@@ -1,0 +1,114 @@
+P45
+package pfb.basics
+
+fun main(args: Array<String>) {
+    var sum = 0
+    for (i in 1..10) {
+        sum = sum + i
+    }
+    print(sum)
+}
+
+
+P47
+package pfb.basics
+
+fun main(args: Array<String>) {
+    var current = 1
+    var previous = 1
+    for (i in 1..10) {
+        //Print previous
+        //Calculate the next one
+        //Re-assign previous to current
+        //Re-assign current to next
+    }
+}
+
+
+P48
+package pfb.basics
+
+fun main(args: Array<String>) {
+    for (i in 1..10) {
+        val square = i * i
+        val cube = i * square
+        println("$i, $square, $cube")
+    }
+}
+
+---------------------------------------
+
+P49
+package pfb.basics
+
+fun main(args: Array<String>) {
+    var sum = 0
+    for (i in 1..100) {
+        sum = sum + i
+    }
+    print(sum)
+}
+
+
+
+package pfb.basics
+
+fun main(args: Array<String>) {
+    var sum = 0
+    for (i in 11..20) {
+        sum = sum + i
+    }
+    print(sum)
+}
+
+P50
+package pfb.basics
+
+fun main(args: Array<String>) {
+    var sum = 0
+    for (i in 1..10) {
+        sum = sum + i * i
+    }
+    print(sum)
+}
+
+
+
+package pfb.basics
+
+fun main(args: Array<String>) {
+    var sum = 0
+    for (i in 1..10) {
+        if (i % 2 == 0) {
+            sum = sum + i
+        }
+    }
+    print(sum)
+}
+
+
+
+package pfb.basics
+
+fun main(args: Array<String>) {
+    var factorial = 1
+    for (i in 1..5) {
+        factorial = factorial * i
+    }
+    print(factorial)
+}
+
+
+P51
+package pfb.basics
+
+fun main(args: Array<String>) {
+    var current = 1
+    var previous = 1
+    for (i in 1..10) {
+        println(previous)
+        val next = current + previous
+        previous = current
+        current = next
+    }
+}

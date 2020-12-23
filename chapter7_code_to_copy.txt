@@ -1,0 +1,240 @@
+P53
+fun main(args: Array<String>) {
+    val str = "Hello World!"
+    val l = str.length
+    println("Length: $l" )
+}
+
+
+
+P54
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val str = "Hello World!"
+    val l = str.length
+    println("Length: $l")
+    val upperCase = str.toUpperCase()
+    println(upperCase)
+    val lowerCase = str.toLowerCase()
+    println(lowerCase)
+}
+
+
+P55
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val str = "Kotlin!"
+    for (c in str) {
+        println(c)
+    }
+}
+
+
+
+P56
+fun main(args: Array<String>) {
+    val str = "Kotlin!"
+    var numberOfSpaces = 0
+    for (c in str) {
+        for (n in 0..numberOfSpaces) {
+            print(" ")
+        }
+        println(c)
+        numberOfSpaces = numberOfSpaces + 1
+    }
+}
+
+
+
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val str = "How long is a piece of string?"
+    var spaceCount = 0
+    for (c in str) {
+        if (c == ' ') {
+            spaceCount = spaceCount + 1
+        }
+    }
+    println("Number of spaces: $spaceCount")
+}
+
+
+P57
+fun main(args: Array<String>) {
+    val msg = "Hello" + " " + "World!"
+    println(msg)
+}
+
+
+
+
+fun main(args: Array<String>) {
+    val str = "There is a bunker!"
+    var noSpaces = ""
+    for (c in str) {
+        if (c != ' ') {
+            noSpaces = noSpaces + c
+        }
+    }
+    println(noSpaces)
+}
+
+
+
+P58
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val str = "back"
+    var result = ""
+    for (c in str) {
+        result = result + c
+    }
+    println(result)
+}
+
+----------------------------------------
+
+P59
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val str = "How long is a piece of string?"
+    var count = 0
+    for (c in str) {
+        if (c == 'a') {
+            count = count + 1
+        }
+    }
+    println("Count: $count")
+}
+
+
+
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val str = "How long is a piece of string?"
+    var count = 0
+    for (c in str) {
+        if (c == 'a' || c == 'e') {
+            count = count + 1
+        }
+    }
+    println("Count: $count")
+}
+
+
+
+P60
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val str = "How long is a piece of string?"
+    var count = 0
+    for (c in str) {
+        if (c == 'a') {
+            count = count + 1
+        }
+        if (c == 'e') {
+            count = count + 1
+        }
+    }
+    println("Count: $count")
+}
+
+
+
+
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val str = "How long is a piece of string?"
+    var count = 0
+    for (c in str) {
+        if (c == 'a' || c == 'e' || c == 'i'|| c == 'o'|| c == 'u') {
+            count = count + 1
+        }
+    }
+    println("Count: $count")
+}
+
+P61
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val str = "Are we there yet?"
+    var count = 0
+    for (c in str) {
+        val l = c.toLowerCase()
+        if (l == 'a' || l == 'e' || l == 'i'|| l == 'o'|| l == 'u') {
+            count = count + 1
+        }
+    }
+    println("Count: $count")
+}
+
+
+
+P62
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val str = "Mind the   gap!"
+    var compacted = ""
+    var previousCharWasASpace = false
+    for (c in str) {
+        if (c == ' ') {
+            if (!previousCharWasASpace) {
+                compacted = compacted + c
+            }
+            previousCharWasASpace = true
+        } else {
+            compacted = compacted + c
+            previousCharWasASpace = false
+        }
+    }
+    println(compacted)
+}
+
+
+
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val str = "back"
+    var result = ""
+
+    val c_0 = 'b'
+    result = result + c_0
+
+    val c_1 = 'a'
+    result = result + c_1
+
+    val c_2 = 'c'
+    result = result + c_2
+
+    val c_3 = 'k'
+    result = result + c_3
+
+    println(result)
+}
+
+
+
+
+P63
+package pfb.basics
+
+fun main(args: Array<String>) {
+    val str = "That's weird!"
+    var reversed = ""
+    for (c in str) {
+        reversed = c + reversed
+    }
+    println(reversed)
+}
+

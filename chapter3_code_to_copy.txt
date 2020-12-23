@@ -1,0 +1,123 @@
+P17
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(2) {
+        Array<Int>(2) { 0 }
+    }
+    shades[0][0] = 192
+    shades[0][1] = 128
+    shades[1][0] = 64
+    shades[1][1] = 0
+    return shades
+}
+
+P18
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(2) {
+        Array<Int>(2) { 0 }
+    }
+    shades[0][0] = 0
+    shades[0][1] = 255
+    shades[1][0] = 255
+    shades[1][1] = 0
+    return shades
+}
+
+P19
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(3) {
+        Array<Int>(3) { 0 }
+    }
+    shades[0][0] = 255
+    shades[0][1] = 255
+    shades[0][2] = 0
+    shades[1][0] = 255
+    shades[1][1] = 0
+    shades[1][2] = 0
+    shades[2][0] = 0
+    shades[2][1] = 0
+    shades[2][2] = 0
+
+    return shades
+}
+
+P20
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(5) {
+        Array<Int>(5) { 0 }
+    }
+    //Set each cell in row 0 to be black
+    for (col in 0..4) {
+        shades[0][col] = 0
+    }
+    //Row 1 is dark grey.
+    for (col in 0..4) {
+        shades[1][col] = 65
+    }
+    //Row 2 is grey.
+    for (col in 0..4) {
+        shades[2][col] = 130
+    }
+    //Row 3 is light grey.
+    for (col in 0..4) {
+        shades[3][col] = 195
+    }
+    //Row 4 is white.
+    for (col in 0..4) {
+        shades[4][col] = 255
+    }
+    return shades
+}
+
+P21
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(5) {
+        Array<Int>(5) { 0 }
+    }
+    for (row in 0..4) {
+        for (col in 0..4) {
+            shades[row][col] = 255
+        }
+    }
+    return shades
+}
+-----------------------------------------
+P22
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(5) {
+        Array<Int>(5) { 0 }
+    }
+    //Set each cell in row 0 to be black
+    for (col in 0..4) {
+        shades[0][col] = 0
+    }
+    //Row 1 is white.
+    for (col in 0..4) {
+        shades[1][col] = 255
+    }
+    //Row 2 is black.
+    for (col in 0..4) {
+        shades[2][col] = 0
+    }
+    //Row 3 is white.
+    for (col in 0..4) {
+        shades[3][col] = 255
+    }
+    //Row 4 is black.
+    for (col in 0..4) {
+        shades[4][col] = 0
+    }
+    return shades
+}
+
+P23
+fun tileColors(): Array<Array<Int>> {
+    val shades = Array<Array<Int>>(5) {
+        Array<Int>(5) { 0 }
+    }
+    for (row in 0..4) {
+        for (col in 0..4) {
+            shades[row][col] = 128
+        }
+    }
+    return shades
+}

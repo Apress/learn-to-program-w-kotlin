@@ -1,0 +1,30 @@
+P16
+
+fun tileColors() :  Array<Array<Int>> {
+    return arrayOf(
+            arrayOf(255, 0),
+            arrayOf(0, 255)
+    )
+}
+
+fun tileColors() :  Array<Array<Int>> {
+    return arrayOf(
+            arrayOf(0, 0),
+            arrayOf(0, 255)
+    )
+}
+
+fun tileColors() :  Array<Array<Int>> {
+    return arrayOf(
+            arrayOf(0, 255, 0),
+            arrayOf(255, 0, 255),
+            arrayOf(0, 255, 0)
+    )
+}
+
+fun tileColors() :  Array<Array<Int>> {
+    return arrayOf(
+            arrayOf(0, 64),
+            arrayOf(128, 192)
+    )
+}
