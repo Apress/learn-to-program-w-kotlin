@@ -9,7 +9,7 @@ fun main() {
 }
 class FirstProgram {
 
-    private fun tileColors() :  Array<Array<Int>> {
+    fun tileColors() : Array<Array<Int>> {
         return arrayOf(
                 arrayOf(0, 255),
                 arrayOf(255, 0)
