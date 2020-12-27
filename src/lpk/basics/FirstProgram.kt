@@ -4,7 +4,6 @@ import javax.swing.ImageIcon
 import javax.swing.JFrame
 import javax.swing.SwingUtilities
 
-
 fun main() {
     SwingUtilities.invokeLater { FirstProgram().doLaunch() }
 }
